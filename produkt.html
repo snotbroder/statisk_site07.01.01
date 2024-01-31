@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="generel.css">
 
+    <!-- fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Mukta&family=Sarala:wght@400;700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
@@ -30,13 +37,20 @@
         <article id="produktside">
 
             <div class="grid1-2">
-                <div class="col1"><img src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp" alt="produktbillede">
+                <div class="col1"><img class="produktbillede" src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp"
+                        alt="produktbillede">
+                    <h5 class="rabatbanner">Rabat</h5>
                 </div>
                 <div class="col2">
                     <h1>Produkt</h1>
 
                     <div class="grid1-2">
-                        <div class="col1"><a href="#">Køb nu</a></div>
+                        <div class="col1">
+                            <a class="cta1" href="#">Læg i kurv</a>
+                            <h4>Pris: <span class="rabat"> 1000kr</span><span class="nypris"> 400kr</span></h4>
+                            <a href="#">Se mål</a>
+                            <p>Varenummer: 1163</p>
+                        </div>
                         <div class="col2">
                             <h3>Om produktet</h3>
                             <p>Dette flotte stykke tøj</p>
@@ -52,10 +66,10 @@
             <div class="grid1-2">
                 <div class="col1">
                     <div class="grid1-1">
-                        <div class="col1"><img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-                                alt="produktbillede"></div>
-                        <div class="col2"><img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-                                alt="produktbillede"></div>
+                        <div class="col1"><img class="produktbillede"
+                                src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="produktbillede"></div>
+                        <div class="col2"><img class="produktbillede"
+                                src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="produktbillede"></div>
 
                     </div>
                 </div>
@@ -68,14 +82,20 @@
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
+            <h3>Se mere i denne kategori</h3>
             <div class="grid1-1-1">
-                <div class="col1">s</div>
-                <div class="col2"></div>
-                <div class="col3"></div>
+                <div class="col1"><a class="link" href="">T-shirt</a></div>
+                <div class="col2"><a class="link" href="">Sommer</a></div>
+                <div class="col3"><a class="link" href="">Mand</a></div>
+            </div>
+            <div class="grid1-1-1">
+                <div class="col1"><a class="link" href="">Sport</a></div>
+                <div class="col2"><a class="link" href="">Nike</a></div>
+                <div class="col3"><a class="link" href="">Tøj</a></div>
             </div>
         </article>
     </main>
-    <footer>Data fra <a
+    <footer>Data fra <a class="link"
             href="https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset">https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset</a>
     </footer>
 </body>
