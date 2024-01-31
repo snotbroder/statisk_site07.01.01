@@ -1,0 +1,50 @@
+/* Dektop */
+@media (min-width: 860px) {
+  .grid2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    margin: 0.5rem 0 0.5rem 0;
+  }
+
+  .grid1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    margin: 0.5rem 0 0.5rem 0;
+  }
+
+  .grid1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin: 0.5rem 0 0.5rem 0;
+  }
+  .grid1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    margin: 0.5rem 0 0.5rem 0;
+  }
+}
+
+.flex1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.col1 {
+  display: grid;
+  order: -1;
+}
+.col2 {
+  display: grid;
+}
+.col3 {
+  display: grid;
+}
+.col4 {
+  display: grid;
+}

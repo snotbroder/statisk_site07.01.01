@@ -1,0 +1,78 @@
+img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  align-self: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: blanchedalmond;
+}
+
+main {
+  padding: 2rem 2rem;
+}
+
+/* Desktop */
+@media (min-width: 860px) {
+  main {
+    padding: 6rem 6rem;
+  }
+  #produktside {
+    padding: 8rem 8rem;
+    margin-top: -8rem;
+  }
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+header nav {
+  background-color: rgb(255, 214, 152);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.produktbillede {
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+}
+
+.produkt {
+  max-width: 13rem;
+  display: grid;
+  place-items: end;
+}
+.produkt a {
+  display: grid;
+  place-items: center;
+}
+
+img,
+h5 {
+  grid-area: 1 / 1;
+  font-size: 2rem;
+}
+
+.udsolgt {
+  color: white;
+}
+
+.produkt:hover {
+  scale: 1.05;
+}
+
+.rabat {
+  text-decoration: line-through;
+}
+
+.nypris {
+  color: red;
+}
