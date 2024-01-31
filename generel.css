@@ -24,6 +24,31 @@ a {
   color: black;
 }
 
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+}
+h2 {
+  font-family: "Mukta", sans-serif;
+}
+h3 {
+  font-family: "Mukta", sans-serif;
+  font-weight: bold;
+}
+h4 {
+  font-family: "Mukta", sans-serif;
+}
+h5 {
+  font-family: "Sarala", sans-serif;
+}
+p {
+  font-family: "Sarala", sans-serif;
+}
+
+span {
+  font-family: "Sarala", sans-serif;
+}
+
 /* Desktop */
 @media (min-width: 860px) {
   main {
@@ -59,6 +84,7 @@ header nav {
   display: grid;
   place-items: end;
   margin: auto;
+  margin-top: 1rem;
 }
 .produkt a {
   display: grid;
@@ -117,10 +143,12 @@ h5 {
   text-align: center;
   padding: 1rem;
   border-radius: 10px;
+  font-family: "Mukta", sans-serif;
 }
 
 .link {
   text-decoration: underline;
+  font-family: "Mukta", sans-serif;
 }
 .link:hover {
   font-style: italic;
