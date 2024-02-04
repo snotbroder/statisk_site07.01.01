@@ -1,4 +1,4 @@
-const url = "https://kea-alt-del.dk/t7/api/products/1525";
+const url = "https://kea-alt-del.dk/t7/api/products/15129";
 
 fetch(url)
   .then((response) => response.json())
@@ -14,6 +14,7 @@ function showProduct(product) {
   document.querySelector(".productPrice").textContent = product.price;
   document.querySelector(".productId").textContent = product.id;
   document.querySelector(".productBrand span").textContent = product.brandname;
+  document.querySelector(".productDescription").textContent = product.description;
 
   document.querySelector(".brandBio span").textContent = product.brandbio;
 

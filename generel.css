@@ -190,3 +190,7 @@ h5,
 .sti {
   list-style: none;
 }
+
+.brandBio {
+  font-style: italic;
+}
