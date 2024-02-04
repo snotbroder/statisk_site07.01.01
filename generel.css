@@ -95,8 +95,10 @@ header nav {
 }
 
 /* Bannere/ rabat og udsolgt */
+
 img,
-h5 {
+h5,
+.discount {
   grid-area: 1 / 1;
 }
 
@@ -114,6 +116,7 @@ h5 {
   padding-left: 1rem;
   z-index: 1;
   max-height: 10%;
+  display: none;
 }
 
 .rabat {
@@ -121,7 +124,6 @@ h5 {
 }
 
 .rabatbanner {
-  display: inherit;
   background-color: red;
   color: gold;
   min-width: 100%;
@@ -130,12 +132,31 @@ h5 {
   padding-left: 1rem;
   z-index: 1;
   max-height: 10%;
+  display: none;
 }
 
-.nypris {
+.discount {
   color: red;
+
+  margin-left: auto;
+  margin-top: auto;
+  display: none;
 }
 
+.rabatPris {
+}
+
+.brand {
+  color: gray;
+}
+
+.display {
+  display: inherit;
+}
+
+.hide {
+  display: none;
+}
 /* Knapper */
 .cta1 {
   background-color: rgb(173, 200, 205);
