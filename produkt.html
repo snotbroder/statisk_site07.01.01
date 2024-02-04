@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside</title>
+    <title>Produktside</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="generel.css">
 
@@ -34,12 +34,90 @@
         </nav>
     </header>
     <main>
+        <ul class="flexsti">
+            <li><a href="">Hej</a></li>
+            <li><a href="">Hej</a></li>
+            <li><a href="">Hej</a></li>
+            <li><a href="">Hej</a></li>
+        </ul>
         <article id="produktside">
+            <div class="grid1-2">
+                <div class="col1"><img class="produktbillede productImage1"
+                        src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp" alt="produktbillede">
+                    <h5 class="rabatbanner">Rabat</h5>
+                    <h5 class="udsolgtbanner">Ikke på lager</h5>
+                </div>
+                <div class="col2">
+                    <h1>PRODUCTNAME</h1>
 
+                    <div class="grid1-2">
+                        <div class="col1">
+                            <a class="cta1" href="#">Læg i kurv</a>
+                            <h4>Pris: <span class="productPrice">PRODUCTPRICE</span>,-</h4>
+                            <!-- <h4>Pris: <span class="rabat"> 1000kr</span><span class="nypris"> 400kr</span></h4> -->
+                            <a class="link" href="#">Se mål</a>
+                            <p>Varenummer: <span class="productId">PRODUCTID</span></p>
+                        </div>
+                        <div class="col2">
+                            <h3>Om produktet</h3>
+                            <p><span class="brand">BRAND</span> | <span class="subcategory">SUBCATEGORY</span> </p>
+                            <p class="productDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Viverra aliquet eget sit amet tellus cras adipiscing.
+                                Tellus integer feugiat scelerisque varius morbi. Porttitor massa id neque aliquam
+                                vestibulum. Tortor aliquam nulla facilisi cras fermentum odio. Semper viverra nam libero
+                                justo laoreet sit amet cursus. Facilisi morbi tempus iaculis urna id volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid1-2">
+                <div class="col1">
+                    <div class="grid1-1">
+                        <div class="col1"><img class="produktbillede productImage2"
+                                src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="produktbillede"></div>
+                        <div class="col2"><img class="produktbillede productImage3"
+                                src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="produktbillede"></div>
+
+                    </div>
+                </div>
+                <div class="col2">
+                    <h3 class="productBrand">Om <span>PRODUCTBRAND</span></h3>
+
+                    <div class="flex2">
+                        <p class="brandBio"><span>BRANDBIO</span></p>
+                        <div class="col2"><img class="brandImage" src="" alt="BRANDIMAGE"></div>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <h3>Se mere i denne kategori</h3>
+            <div class="grid1-1-1">
+                <div class="col1"><a class="link l1" href=""><span>SUBCATEGORY1</span></a></div>
+                <div class="col2"><a class="link l2" href=""><span>Sommer</span></a></div>
+                <div class="col3"><a class="link l3" href=""><span>Mand</a></span></div>
+            </div>
+            <div class="grid1-1-1">
+                <div class="col1"><a class="link l4" href=""><span>Sport</span></a></div>
+                <div class="col2"><a class="link l5" href=""><span>Nike</span></a></div>
+                <div class="col3"><a class="link l6" href=""><span>Tøj</span></a></div>
+            </div>
+        </article>
+    </main>
+    <hr>
+
+    <!-- <template>
+        <article id="produktside">
             <div class="grid1-2">
                 <div class="col1"><img class="produktbillede" src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp"
                         alt="produktbillede">
                     <h5 class="rabatbanner">Rabat</h5>
+                    <h5 class="udsolgt">Ikke på lager</h5>
                 </div>
                 <div class="col2">
                     <h1>Produkt</h1>
@@ -47,13 +125,15 @@
                     <div class="grid1-2">
                         <div class="col1">
                             <a class="cta1" href="#">Læg i kurv</a>
-                            <h4>Pris: <span class="rabat"> 1000kr</span><span class="nypris"> 400kr</span></h4>
+                            <h4 class="productPrice">Pris: <span class="rabat"> 1000kr</span><span class="nypris">
+                                    400kr</span></h4>
                             <a class="link" href="#">Se mål</a>
-                            <p>Varenummer: 1163</p>
+                            <p class="productId">Varenummer: 1163</p>
                         </div>
                         <div class="col2">
                             <h3>Om produktet</h3>
-                            <p>Dette flotte stykke tøj</p>
+
+                            <p><span class="brand">BRAND</span> | <span class="subcategory">THSHIT</span> </p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. Viverra aliquet eget sit amet tellus cras adipiscing.
                                 Tellus integer feugiat scelerisque varius morbi. Porttitor massa id neque aliquam
@@ -94,10 +174,15 @@
                 <div class="col3"><a class="link" href="">Tøj</a></div>
             </div>
         </article>
-    </main>
+    </template> -->
+    <!-- ------------------------------------------ -->
+
+
+
     <footer>Data fra <a class="link"
             href="https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset">https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset</a>
     </footer>
+    <script src="produkt.js"></script>
 </body>
 
 </html>

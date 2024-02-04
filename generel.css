@@ -43,14 +43,19 @@ h5 {
 }
 p {
   font-family: "Sarala", sans-serif;
+  margin: 1rem 0 1rem 0;
 }
 
 span {
   font-family: "Sarala", sans-serif;
 }
 
+img {
+  margin-top: 1rem;
+}
+
 /* Desktop */
-@media (min-width: 860px) {
+@media (min-width: 1200px) {
   main {
     padding: 6rem 6rem;
   }
@@ -70,6 +75,11 @@ header nav {
   padding-bottom: 2rem;
 }
 
+.brandImage {
+  height: 4rem;
+  background-blend-mode: screen;
+}
+
 .produktbillede {
   aspect-ratio: 1/1;
   border-radius: 10px;
@@ -86,6 +96,7 @@ header nav {
   margin: auto;
   margin-top: 1rem;
 }
+
 .produkt a {
   display: grid;
   place-items: start;
