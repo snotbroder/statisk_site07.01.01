@@ -171,9 +171,10 @@ h5,
 /* Knapper */
 .cta1 {
   background-color: rgb(173, 200, 205);
-  max-height: 50%;
+  height: auto;
+
   text-align: center;
-  padding: 1rem;
+  padding: auto;
   border-radius: 10px;
   font-family: "Mukta", sans-serif;
 }
@@ -184,4 +185,8 @@ h5,
 }
 .link:hover {
   font-style: italic;
+}
+
+.sti {
+  list-style: none;
 }
