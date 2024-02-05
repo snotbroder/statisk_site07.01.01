@@ -22,7 +22,10 @@ function listProducts(oneProduct) {
   myClone.querySelector(".myPrice span").textContent = oneProduct.price;
   myClone.querySelector(".brand").textContent = oneProduct.brandname;
   myClone.querySelector(".discount").textContent = `Spar ${oneProduct.discount}%`;
-  //   myClone.querySelector(".discount span").textContent = oneProduct.discount;
+
+  // const productID = oneProduct.id;
+  document.querySelector(".produktbillede").src = `https://kea-alt-del.dk/t7/images/webp/640/${oneProduct.id}.webp`;
+  console.log(oneProduct.id);
 
   if (oneProduct.soldout) {
     //udsolgt
@@ -38,13 +41,15 @@ function listProducts(oneProduct) {
   //Beregn rabatPrice
 
   if (oneProduct.discount) {
-    oneProduct.rabatPrice = oneProduct.price * (1 - oneProduct.discount / 100);
+    oneProduct.rabatPrice = oneProduct.price * (1 - oneProduct.discount / 100); //stjålet fra chatgpt
+    oneProduct.rabatPrice = oneProduct.rabatPrice.toFixed(2); //stjålet fra chatgpt
     //rabat
     myClone.querySelector(".myPrice").classList.add("rabat");
     myClone.querySelector(".rabatbanner").classList.add("display");
     // myClone.querySelector(".discount").classList.add("display");
     myClone.querySelector(".rabatPrice").classList.add("display");
-    myClone.querySelector(".discount").textContent = `NYPRIS ${oneProduct.rabatPrice},-`;
+    myClone.querySelector(".rabatPrice").textContent = `${oneProduct.rabatPrice},-`;
+    console.log(oneProduct.rabatPrice);
   }
 
   console.log("paste");

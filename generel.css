@@ -105,6 +105,11 @@ header nav {
   scale: 1.05;
 }
 
+/* tekst på produktliste */
+.produkt p {
+  margin-top: 0;
+}
+
 /* Bannere/ rabat og udsolgt */
 
 img,
