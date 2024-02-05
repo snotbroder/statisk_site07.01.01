@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const url = "https://kea-alt-del.dk/t7/api/products";
+  const urlParams = new URLSearchParams(window.location.search);
+  const category = urlParams.get("category");
+
+  const url = "https://kea-alt-del.dk/t7/api/products?category=" + category;
 
   fetch(url)
     .then((response) => response.json())

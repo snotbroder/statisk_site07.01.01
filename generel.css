@@ -118,9 +118,8 @@ h5,
   grid-area: 1 / 1;
 }
 
-.udsolgt {
-  color: black;
-  filter: grayscale(0.5);
+.udsolgt img {
+  filter: brightness(0.5);
 }
 
 .udsolgtbanner {
