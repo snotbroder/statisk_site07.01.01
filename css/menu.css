@@ -1,0 +1,23 @@
+.menu li {
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(105, 105, 167);
+  transition: color 0.2s ease;
+}
+
+.menu li:hover {
+  color: red;
+}
+header nav {
+  padding: 1rem;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+header nav {
+  background-color: rgb(173, 200, 205);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

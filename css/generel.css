@@ -65,16 +65,6 @@ img {
   }
 }
 
-header nav ul {
-  display: flex;
-  justify-content: space-around;
-}
-header nav {
-  background-color: rgb(173, 200, 205);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .brandImage {
   height: 4rem;
   background-blend-mode: screen;
