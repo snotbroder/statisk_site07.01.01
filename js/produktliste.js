@@ -1,8 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const urlParams = new URLSearchParams(window.location.search);
-  const category = urlParams.get("category");
+  //parameter for kategori
+  const urlParamsCat = new URLSearchParams(window.location.search);
+  const category = urlParamsCat.get("category");
 
-  const url = "https://kea-alt-del.dk/t7/api/products?category=" + category;
+  const urlCat = "https://kea-alt-del.dk/t7/api/products?category=" + category;
+
+  //parameter for brandname
+  const urlParamsBrand = new URLSearchParams(window.location.search);
+  const brandname = urlParamsBrand.get("brandname");
+
+  const urlBrand = "https://kea-alt-del.dk/t7/api/products?brandname=" + brandname;
 
   fetch(url)
     .then((response) => response.json())

@@ -2,11 +2,12 @@
   list-style: none;
   font-family: "Montserrat", sans-serif;
   color: rgb(105, 105, 167);
-  transition: color 0.2s ease;
 }
 
 .menu li:hover {
   color: red;
+  border-bottom: 3px #6969a7 solid;
+  transition: color 0.2s ease;
 }
 header nav {
   padding: 1rem;
@@ -17,7 +18,18 @@ header nav ul {
   justify-content: space-around;
 }
 header nav {
-  background-color: rgb(173, 200, 205);
+  background-color: #adc8cd;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.logo {
+  height: auto;
+  width: 50%;
+}
+
+.icon {
+  height: auto;
+  width: 5rem;
+  margin: auto;
 }
