@@ -18,6 +18,11 @@ function oneCategory(cat) {
   clone.querySelector("h2").textContent = cat.category;
   clone.querySelector("a").href = `produktliste.html?category=${cat.category}`;
 
+  const urlParams = new URLSearchParams(window.location.search);
+  const category = urlParams.get("category");
+  //-ændre billede
+  //clone.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/1000/${}.webp`;
+
   //append/paste
-  document.querySelector("main section").appendChild(clone);
+  https: document.querySelector("main section").appendChild(clone);
 }
