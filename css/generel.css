@@ -79,6 +79,15 @@ img {
   -moz-box-shadow: -5px 7px 23px -1px rgba(186, 186, 186, 0.57);
 }
 
+.produktbillede2 {
+  aspect-ratio: 1/2;
+  border-radius: 10px;
+
+  box-shadow: -5px 7px 23px -1px rgba(186, 186, 186, 0.57);
+  -webkit-box-shadow: -5px 7px 23px -1px rgba(186, 186, 186, 0.57);
+  -moz-box-shadow: -5px 7px 23px -1px rgba(186, 186, 186, 0.57);
+}
+
 .produkt {
   max-width: 13rem;
   display: grid;
