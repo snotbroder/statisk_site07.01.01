@@ -35,6 +35,23 @@ function showProduct(product) {
   document.querySelector(".l4 span").textContent = product.usagetype;
   document.querySelector(".l5 span").textContent = product.brandname;
   document.querySelector(".l6 span").textContent = product.articletype;
+
+  if (product.soldout) {
+    document.querySelector("article").classList.add("udsolgt");
+    document.querySelector(".udsolgtbanner").classList.add("display");
+    document.querySelector(".rabatbanner").classList.add("hide");
+    document.querySelector(".discount").classList.add("hide");
+  }
+
+  if (product.discount) {
+    product.rabatPrice = product.price * (1 - product.discount / 100); //stjålet fra chatgpt
+    product.rabatPrice = product.rabatPrice.toFixed(2); //stjålet fra chatgpt
+    document.querySelector(".productPrice").classList.add("rabat");
+    document.querySelector(".rabatbanner").classList.add("display");
+    document.querySelector(".rabatPrice").classList.add("display");
+    document.querySelector(".rabatPrice span").textContent = `${product.rabatPrice},-`;
+    console.log(product.rabatPrice);
+  }
 }
 
 //{"id":1525,"gender":"Unisex","category":"Accessories","subcategory":"Bags","articletype":"Backpacks","basecolour":"Navy Blue","season":"Fall","productionyear":2010,"usagetype":"Casual","productdisplayname":"Deck Navy Blue Backpack","parsed":1,"soldout":0,"relid":1525,"price":1299,"discount":55,"variantname":"Deck Backpack","brandname":"Puma","brandbio":"PUMA is the World's Fastest Sports Brand","brandimage":"http:\/\/assets.myntassets.com\/assets\/images\/2015\/11\/17\/11447736932686-113016-3ff8sf.jpg","agegroup":"Adults-Unisex","colour1":"NA","colour2":"NA","fashiontype":"Fashion","materialcaredesc":null,"sizefitdesc":null,"description":"<p>asfafaf<br> kasjhdkashd<\/p>","styledesc":null}
