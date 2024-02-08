@@ -164,14 +164,22 @@ h5,
 }
 /* Knapper */
 .cta1 {
-  background-color: rgb(173, 200, 205);
+  background-color: #adc8cd;
   height: auto;
 
   text-align: center;
-  padding: 1rem 4rem;
+  padding: 1rem 3rem;
   border-radius: 10px;
   font-family: "Mukta", sans-serif;
   margin: auto;
+  transition: 0.1s ease;
+  border: 2px solid #adc8cd;
+}
+
+.cta1:hover {
+  background-color: #9eb7bb;
+  transition: 0.2s ease;
+  color: #f5f5f5;
 }
 
 .link {
@@ -188,4 +196,12 @@ h5,
 
 .brandBio {
   font-style: italic;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: #6969a7;
 }
